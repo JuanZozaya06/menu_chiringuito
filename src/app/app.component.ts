@@ -32,31 +32,31 @@ export class AppComponent implements OnInit {
       items: [
         {
           name: 'Clásica',
-          price: '1',
+          price: '6',
           disclaimer: '',
           top: true,
         },
         {
           name: 'Chisto burguer',
-          price: '1',
+          price: '10',
           disclaimer: '',
           top: false,
         },
         {
           name: 'tex mex',
-          price: '1',
+          price: '9',
           disclaimer: '',
           top: false,
         },
         {
           name: 'pulled pork',
-          price: '1',
+          price: '10',
           disclaimer: '',
           top: false,
         },
         {
           name: 'mar y tierra',
-          price: '1',
+          price: '12',
           disclaimer: '',
           top: false,
         },
@@ -67,13 +67,13 @@ export class AppComponent implements OnInit {
       items: [
         {
           name: 'clásico',
-          price: '1',
+          price: '2',
           disclaimer: '',
           top: false,
         },
         {
           name: 'playero',
-          price: '2',
+          price: '3',
           disclaimer: '',
           top: false,
         },
@@ -85,19 +85,19 @@ export class AppComponent implements OnInit {
         },
         {
           name: 'pulled pork',
-          price: '4',
+          price: '4.5',
           disclaimer: '',
           top: false,
         },
         {
           name: 'bulldog',
-          price: '5',
+          price: '4.5',
           disclaimer: '',
           top: true,
         },
         {
           name: 'camarones',
-          price: '6',
+          price: '5',
           disclaimer: '',
           top: false,
         },
@@ -111,25 +111,25 @@ export class AppComponent implements OnInit {
       items: [
         {
           name: 'clásica',
-          price: '1',
+          price: '6',
           disclaimer: '',
           top: false,
         },
         {
           name: 'mexicanas',
-          price: '1',
+          price: '10',
           disclaimer: '',
           top: false,
         },
         {
           name: 'toci papas',
-          price: '1',
+          price: '9',
           disclaimer: '',
           top: false,
         },
         {
           name: 'chisto papas',
-          price: '1',
+          price: '9',
           disclaimer: '',
           top: true,
         },
@@ -141,7 +141,7 @@ export class AppComponent implements OnInit {
       items: [
         {
           name: 'relleno',
-          price: '1',
+          price: '2.5',
           disclaimer: '',
           top: false,
         },
@@ -161,13 +161,13 @@ export class AppComponent implements OnInit {
       items: [
         {
           name: 'refresco',
-          price: '1',
+          price: '2.5',
           disclaimer: '(lata)',
           top: false,
         },
         {
           name: 'cerveza',
-          price: '1',
+          price: '1.5',
           disclaimer: '(nacional)',
           top: false,
         },
