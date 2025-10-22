@@ -1,15 +1,24 @@
 <div class="container">
-  <div
-    class="side l"
-    [ngStyle]="{ 'background-image': 'url(' + images[currentIndex].url + ')' }"
-  >
-    <div class="caption">{{ images[currentIndex].name }}</div>
+  <div class="side l">
+    <div class="slider">
+      <img
+        *ngFor="let img of images; let i = index"
+        class="slide"
+        [class.active]="i === currentIndex"
+        [class.prev]="i === prevIndex"
+        [src]="img.url"
+        [alt]="img.name"
+        draggable="false"
+      />
+
+      <div class="caption">{{ images[currentIndex].name }}</div>
+    </div>
   </div>
+
   <div class="side r">
     <div class="column">
       <div class="menu-item" *ngFor="let section of left">
         <img src="mancha.png" class="spot" />
-
         <div class="title">{{ section.name }}</div>
         <div class="items">
           <div class="item" *ngFor="let item of section.items">
@@ -26,10 +35,10 @@
         </div>
       </div>
     </div>
+
     <div class="column">
       <div class="menu-item" *ngFor="let section of right">
         <img src="mancha.png" class="spot" />
-
         <div class="title">{{ section.name }}</div>
         <div class="items">
           <div class="item" *ngFor="let item of section.items">
