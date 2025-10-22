@@ -19,12 +19,12 @@
     display: flex;
     overflow: hidden;
 
+    /* --- LADO IZQUIERDO: Slider con imágenes y caption animado --- */
     &.l {
       width: 30%;
       position: relative;
       background-color: black;
 
-      /* --- Slider de imágenes --- */
       .slider {
         position: relative;
         width: 100%;
@@ -58,20 +58,45 @@
         z-index: 1;
       }
 
+      /* --- Captions animados --- */
+      .captions {
+        position: absolute;
+        left: 24px;
+        bottom: 24px;
+        width: calc(100% - 48px);
+        height: 2.4rem;
+        pointer-events: none;
+        z-index: 3;
+      }
+
       .caption {
+        position: absolute;
+        inset: 0 auto auto 0;
         color: white;
         text-transform: uppercase;
         -webkit-text-stroke: 4px black;
         paint-order: stroke fill;
-        position: absolute;
-        left: 24px;
-        width: fit-content;
-        bottom: 24px;
-        z-index: 3;
         font-size: 1.8rem;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity 600ms ease, transform 600ms ease;
+        will-change: opacity, transform;
+      }
+
+      .caption.active {
+        opacity: 1;
+        transform: translateY(0);
+        z-index: 2;
+      }
+
+      .caption.prev {
+        opacity: 0;
+        transform: translateY(-6px);
+        z-index: 1;
       }
     }
 
+    /* --- LADO DERECHO: Menú con columnas y decoraciones --- */
     &.r {
       flex: 1;
       display: flex;
@@ -196,7 +221,7 @@
   }
 }
 
-/* --- Decorativos del fondo --- */
+/* --- Decoraciones del fondo --- */
 .bg {
   position: absolute;
   width: 70%;

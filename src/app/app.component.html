@@ -11,7 +11,17 @@
         draggable="false"
       />
 
-      <div class="caption">{{ images[currentIndex].name }}</div>
+      <!-- ✅ Un caption por imagen -->
+      <div class="captions">
+        <div
+          class="caption"
+          *ngFor="let img of images; let i = index"
+          [class.active]="i === currentIndex"
+          [class.prev]="i === prevIndex"
+        >
+          {{ img.name }}
+        </div>
+      </div>
     </div>
   </div>
 

@@ -68,7 +68,7 @@ export class AppComponent implements OnInit, OnDestroy {
     {
       name: 'Bebidas',
       items: [
-        { name: 'refresco', price: '2.5', disclaimer: '(lata)', top: false },
+        { name: 'refresco', price: '2', disclaimer: '(lata)', top: false },
         { name: 'cerveza', price: '1.5', disclaimer: '(nacional)', top: false },
       ],
     },
